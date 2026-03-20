@@ -1,9 +1,9 @@
-.features-section {
+.progression-section {
   @include media(desktop) {
   }
 }
 
-.features-bg-wrapper {
+.progression-bg-wrapper {
   padding-top: 48px;
   padding-bottom: 48px;
   max-width: 375px;
@@ -17,12 +17,12 @@
   }
 }
 
-.features-container {
+.progression-container {
   @include media(desktop) {
   }
 }
 
-.features-content-wrapper {
+.progression-content-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,23 +35,23 @@
   }
 }
 
-.features-text-wrapper {
+.progression-text-wrapper {
   @include media(desktop) {
     max-width: max-content;
   }
 }
 
-.features-title {
+.progression-title {
   @include media(desktop) {
   }
 }
 
-.features-subtitle {
+.progression-subtitle {
   @include media(desktop) {
   }
 }
 
-.features-text {
+.progression-text {
   font-family: 'Playfair Display', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -63,7 +63,7 @@
   }
 }
 
-.features-list {
+.progression-list {
   list-style-type: disc;
   padding-left: 25px;
   display: flex;
@@ -76,12 +76,12 @@
   }
 }
 
-.features-list-item {
+.progression-list-item {
   @include media(desktop) {
   }
 }
 
-.features-item-text {
+.progression-item-text {
   font-family: 'Playfair Display', sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -93,7 +93,7 @@
   }
 }
 
-.features-img {
+.progression-img {
   @include media(desktop) {
     min-width: 447px;
   }

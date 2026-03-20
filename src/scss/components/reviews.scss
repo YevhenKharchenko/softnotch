@@ -1,0 +1,98 @@
+.reviews-section {
+  @include media(desktop) {
+  }
+}
+
+.reviews-bg-wrapper {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  @include media(desktop) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    max-width: 1440px;
+  }
+}
+
+.reviews-title-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.reviews-container {
+}
+
+.reviews-title {
+  @include media(desktop) {
+  }
+}
+
+.reviews-swiper-container {
+  max-width: 272px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: 1440px;
+  }
+}
+
+.reviews-swiper-container.show {
+  visibility: visible;
+}
+
+.reviews-swiper-wrapper {
+  @include media(desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    width: 100%;
+  }
+}
+
+.reviews-slide {
+  box-shadow: inset 1px 2px 6px 0 rgba(0, 0, 0, 0.25);
+  background: #f5f2e9;
+  border-radius: 16px;
+  padding: 16px 24px;
+  display: flex !important;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 272px;
+
+  @include media(desktop) {
+    width: 100% !important;
+    max-width: 544px;
+  }
+}
+
+.reviews-item-text {
+  font-family: 'Playfair Display', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #422e1b;
+
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}
+
+.reviews-item-name {
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: right;
+  color: #422e1b;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}

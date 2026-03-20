@@ -4,8 +4,8 @@
 }
 
 .gameplay-bg-wrapper {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 48px;
+  padding-bottom: 48px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
@@ -14,7 +14,6 @@
     padding-top: 80px;
     padding-bottom: 80px;
     max-width: 1440px;
-    position: relative;
   }
 }
 
@@ -24,7 +23,21 @@
 }
 
 .gameplay-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+
   @include media(desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+}
+
+.gameplay-text-wrapper {
+  @include media(desktop) {
+    max-width: max-content;
   }
 }
 
@@ -38,80 +51,20 @@
   }
 }
 
-.gameplay-img {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 40px;
-
-  @include media(desktop) {
-    position: absolute;
-    top: 80px;
-    right: 160px;
-  }
-}
-
-.gameplay-list-text {
-  font-family: 'Outfit', sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #8023aa;
-  margin-bottom: 16px;
-
-  @include media(desktop) {
-    font-size: 18px;
-    margin-bottom: 24px;
-  }
-}
-
-.gameplay-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-bottom: 40px;
-
-  @include media(desktop) {
-    margin-bottom: 24px;
-  }
-}
-
-.gameplay-list-item {
-  display: flex;
-  align-items: start;
-  gap: 8px;
-
-  @include media(desktop) {
-  }
-}
-
-.puzzle-icon {
-  min-width: 32px;
-
-  @include media(desktop) {
-  }
-}
-
-.gameplay-item-text {
-  font-family: 'Outfit', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.5;
-  color: #8023aa;
-
-  @include media(desktop) {
-    font-size: 20px;
-  }
-}
-
 .gameplay-text {
-  font-family: 'Outfit', sans-serif;
-  font-weight: 300;
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #8023aa;
+  color: #422e1b;
 
   @include media(desktop) {
     font-size: 18px;
-    max-width: 544px;
+  }
+}
+
+.gameplay-img {
+  @include media(desktop) {
+    min-width: 447px;
   }
 }
